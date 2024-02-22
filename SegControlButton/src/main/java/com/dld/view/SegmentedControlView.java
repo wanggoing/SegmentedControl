@@ -219,6 +219,7 @@ public class SegmentedControlView extends View implements ISegmentedControl{
             throw new IllegalArgumentException("position error");
         }
         this.selectedItem = position;
+        requestLayout();
         invalidate();
     }
 
